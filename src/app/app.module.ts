@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AddEntryComponent } from './add-entry/add-entry.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { RouterModule, Routes } from '@angular/router';
     AddEntryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
