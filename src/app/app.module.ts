@@ -6,11 +6,15 @@ import { AddEntryComponent } from './add-entry/add-entry.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddEntryComponent
+    AddEntryComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -14,8 +14,7 @@
 
 .diffmargin {
 /* margin-top: 55px; */
-height: 55px;
-
+ height: 55px;
 }
 
 .navlink {
@@ -38,4 +37,8 @@ li a:hover {
   /* display: inline; */
   text-decoration: underline;
   padding: 12px;
+}
+.bor {
+   border-bottom: 5px solid orange;
+      border-top: 5px solid orange;
 }
