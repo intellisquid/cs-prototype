@@ -1,0 +1,20 @@
+ul:
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navbar {
+    float: left;
+  }
+
+.navlink {
+    display: inline;
+  }
+
+li a {
+  display: inline;
+  padding: 8px;
+}
