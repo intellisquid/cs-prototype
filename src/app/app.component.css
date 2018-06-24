@@ -1,20 +1,41 @@
-ul:
+/* ul:
   {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+  } */
 
-.navbar {
+/* .navbar {
     float: left;
-  }
+  } */
+
+
+
+.diffmargin {
+/* margin-top: 55px; */
+height: 55px;
+
+}
 
 .navlink {
     display: inline;
+    font-size: 1.25em;
+    font-weight: bold;
   }
 
 li a {
-  display: inline;
-  padding: 8px;
+  /* display: inline; */
+  text-decoration: none;
+  padding: 12px;
+}
+li a:active {
+  /* display: inline; */
+  text-decoration: underline;
+  padding: 12px;
+}
+li a:hover {
+  /* display: inline; */
+  text-decoration: underline;
+  padding: 12px;
 }
