@@ -1,3 +1,16 @@
-<p>
-  add-entry works!
-</p>
+<form #newentryForm="ngForm" (ngSubmit)="submitEntry(newentryForm.form);">
+
+  <button class="btn btn-primary" [disabled]="!newentryForm.valid">Submit</button>
+
+  <input type="text"
+    class="form-control"
+    name="newentry-name"
+    ngModel
+    #newentrynameField = "ngModel"
+    required
+    minlength = "3">
+
+
+  <div *ngIf="newentry-name
+   class="alert alert-danger"
+  *ngIf=""
