@@ -6,11 +6,25 @@
     class="form-control"
     name="newentry-name"
     ngModel
-    #newentrynameField = "ngModel"
+    #nameField = "ngModel"
     required
     minlength = "3">
 
 
-  <div *ngIf="newentry-name
-   class="alert alert-danger"
-  *ngIf=""
+    <div *ngIf="nameField.touched && nameField.errors"></div>
+
+    <div class="alert alert-danger"
+     *ngIf="nameField.errors?.required">
+      Entry name is required.
+    </div>
+
+    <div class="alert alert-danger"
+      *ngIf="nameField.errors?.minlength">
+      Entry name must be at least {{ nameField.errors.minlength.requiredLength }} letters.
+    </div>
+
+
+
+
+
+  

@@ -27,3 +27,5 @@ import { ContactComponent } from './contact/contact.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export class 
