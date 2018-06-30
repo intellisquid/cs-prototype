@@ -3,28 +3,23 @@
   <button class="btn btn-primary" [disabled]="!newentryForm.valid">Submit</button>
 
   <input type="text"
-    class="form-control"
-    name="newentry-name"
-    ngModel
-    #nameField = "ngModel"
-    required
-    minlength = "3">
+  class="form-control"
+  name="newentry-name"
+  [(ngModel)]="entry.name"
+  #nameField = "ngModel"
+  required
+  minlength = "3">
 
 
-    <div *ngIf="nameField.touched && nameField.errors"></div>
+  <div *ngIf="nameField.touched && nameField.errors"></div>
 
-    <div class="alert alert-danger"
-     *ngIf="nameField.errors?.required">
-      Entry name is required.
-    </div>
+  <div class="alert alert-danger"
+  *ngIf="nameField.errors?.required">
+  Entry name is required.
+</div>
 
-    <div class="alert alert-danger"
-      *ngIf="nameField.errors?.minlength">
-      Entry name must be at least {{ nameField.errors.minlength.requiredLength }} letters.
-    </div>
-
-
-
-
-
-  
+<div class="alert alert-danger"
+  *ngIf="nameField.errors?.minlength">
+  Entry name must be at least {{ nameField.errors.minlength.requiredLength }} letters.
+  </div>
+</form>

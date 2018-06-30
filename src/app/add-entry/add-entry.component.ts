@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-entry.component.css']
 })
 export class AddEntryComponent implements OnInit {
+  entry:any;
 
-  constructor() { }
+  constructor() {
+    this.entry = {};
+  }
 
   ngOnInit() {
   }

@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { EntryDetailComponent } from './entry-detail/entry-detail.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     AddEntryComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    EntryDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -27,5 +29,3 @@ import { ContactComponent } from './contact/contact.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-export class 
