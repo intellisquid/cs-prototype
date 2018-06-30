@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'addentry', component: EntryDetailComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent};
+  {path: 'detail', component: entry-detail};
 ];
 
 @NgModule({

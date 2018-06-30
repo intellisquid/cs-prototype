@@ -10,6 +10,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { EntryDetailComponent } from './entry-detail/entry-detail.component';
+import { EntryService } from './entryservice/EntryService';
+import { EntryListComponent } from './entry-list/entry-list.component';
 
 
 @NgModule({
@@ -18,14 +20,17 @@ import { EntryDetailComponent } from './entry-detail/entry-detail.component';
     AddEntryComponent,
     HomeComponent,
     ContactComponent,
-    EntryDetailComponent
+    EntryDetailComponent,
+    EntryListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+      EntryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
